@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     
     <title>LEKTATI MAHDI</title>
 </head>
@@ -18,7 +20,7 @@
     <section class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
-                <h1>Hi, I'm Lektati Mahdi</h1>
+                <h1>Hi, I'm Mahdi Lektati</h1>
             </div>
 
             <div class="intro-wrapper">
@@ -37,10 +39,10 @@
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
                     
                     <div class="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">Theme settings will be saved for<br>your next visit</p>
@@ -160,21 +162,23 @@
 
             <form id="contact-form">
                 <label>Name</label>
-                <input class="input-field" type="text" name="name">
+                <input class="input-field" type="text" name="name" required>
                 
                 <label>Subject</label>
-                <input class="input-field" type="text" name="subject">
+                <input class="input-field" type="text" name="subject" required>
 
                 <label>Email</label>
-                <input class="input-field" type="text" name="email">
+                <input class="input-field" type="text" name="email" required>
 
                 <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
+                <textarea class="input-field" name="message" required></textarea>
 
                 <input id="submit-btn" type="submit" value="Send">
             </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
