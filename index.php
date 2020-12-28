@@ -1,1 +1,1 @@
-<?php include_once("src/.") ?>
+<?php include("src/index.html") ?>
