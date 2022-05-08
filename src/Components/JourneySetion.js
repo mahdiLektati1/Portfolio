@@ -7,6 +7,9 @@ import JourneyItem from './JourneyItem';
 function JourneySetion() {
     return (
         <JourneyStyled>
+            <JourneyItem 
+                text={"L'éducation n'est pas une préparation à la vie, l'éducation est la vie elle-même."} 
+            />
             <Title title={'Parcours professionnel'} span={'Parcours Pro'} />
             <InnerLayout>
                 <div className="journey">
@@ -43,7 +46,7 @@ function JourneySetion() {
                                 </li>
                             </ul>
                         </div>
-
+                        <br />
                         <div class="col-md-12 example-title">
                             <h2>ÉDUCATION</h2>
                             <p>“ Telle éducation, tels fruits. ”</p>
@@ -100,11 +103,8 @@ function JourneySetion() {
                 </div>
             </InnerLayout>
             <div className="conclusion-rapper">
-                <JourneyItem 
-                    text={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt culpa ad itaque quas?'} 
-                />
                 <JourneyItem
-                    text={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt culpa ad itaque quas? Dos ir por culpa ad itaque quas!'} 
+                    text={"Pour accomplir de grandes choses, nous devons non seulement agir, mais aussi rêver, non seulement planifier, mais aussi croire."} 
                 />
             </div>
         </JourneyStyled>

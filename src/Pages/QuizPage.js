@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Title from '../Components/Title';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
+import questions from '../data/questions';
+import QuizResult from '../Components/QuizResult';
 
 function BlogsPage() {
-    const questions = [
+    /*const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: '🎁 Quel est le plus beau cadeau que Mahdi ait reçu?',
 			answerOptions: [
 				{ answerText: 'New York', isCorrect: false },
 				{ answerText: 'London', isCorrect: false },
@@ -41,7 +43,7 @@ function BlogsPage() {
 				{ answerText: '7', isCorrect: true },
 			],
 		},
-	];
+	];*/
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
@@ -68,7 +70,7 @@ function BlogsPage() {
                     <div className='quiz-section'>
                         {showScore ? (
                             <div className='score-section'>
-                                You scored {score} out of {questions.length}
+                                Vous avez obtenu {score} sur {questions.length}
                             </div>
                         ) : (
                             <>
@@ -87,6 +89,7 @@ function BlogsPage() {
                         )}
                     </div>
                 </InnerLayout>
+                { showScore ? <QuizResult /> : <div></div> }
             </GameStyled>
         </MainLayout>
     )

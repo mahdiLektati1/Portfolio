@@ -48,6 +48,9 @@ const GlobalStyle = createGlobalStyle`
     --journey-primary-color-hover: scale-color($primary-color, $lightness: 32%);
     --journey-seperator-color: rgb(204, 213, 219);
     --journey-seperator-width: 3px;
+
+    --title-line-color: #000;
+    --values-background-color: #eee;
 }
 .dark-theme{
     --primary-color: #007bff;
@@ -75,6 +78,9 @@ const GlobalStyle = createGlobalStyle`
     --journey-primary-color-hover: scale-color($primary-color, $lightness: 32%);
     --journey-seperator-color: #A6ACAF;
     --journey-seperator-width: 2px;
+
+    --title-line-color: #fff;
+    --values-background-color: #191D2B;
 }
 
 *{

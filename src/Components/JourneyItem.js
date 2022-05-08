@@ -10,7 +10,7 @@ function JourneyItem({text}) {
 }
 
 const JourneyItemStyled = styled.div`
-    margin: 5rem 0;
+    margin-bottom: 5rem;
     padding: 2rem 1rem;
     border-left: 6px solid var(--border-color);
     background-color: var(--background-dark-grey);
